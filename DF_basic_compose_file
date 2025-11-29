@@ -1,2 +1,18 @@
 ---
 version: "3"
+services:
+  first:
+    container_name: firstcont
+    image: httpd
+    ports:
+      - "8098:80"
+  second:
+    container_name: seccont
+    image: ravisrinivas2025/tulasi:basic
+    ports:
+      - "8099:80"
+  third:
+    container_name: thicont
+    image: shaikmustafa/dm
+    ports:
+        - "8100:80"
